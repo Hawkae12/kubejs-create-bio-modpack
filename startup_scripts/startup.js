@@ -1,0 +1,12 @@
+// priority: 0
+
+StartupEvents.registry("item", (event) => {
+  event
+    .create("primordial_goo", "create:sequenced_assembly")
+    .unstackable()
+    .displayName("Primordial Goo")
+    .rarity("rare")
+    .food((food) => {
+      food.hunger(1).saturation(1).effect("poison", 1200, 4, 3).alwaysEdible(); // Like golden apples.fastToEat()//Like dried kelp
+    });
+});
