@@ -9,4 +9,9 @@ StartupEvents.registry("item", (event) => {
     .food((food) => {
       food.hunger(1).saturation(1).effect("poison", 1200, 4, 3).alwaysEdible(); // Like golden apples.fastToEat()//Like dried kelp
     });
+
+  event
+    .create("rotten_dust", "create:sequenced_assembly")
+    .displayName("Rotten Dust")
+    .tooltip("☌⟊⎅⎎  ⟟⟒⟟⏚⌇⟒  ⟟⎅⟊⏃⍙⟒  ⟒⎅   ⎍⟒  ⊑");
 });

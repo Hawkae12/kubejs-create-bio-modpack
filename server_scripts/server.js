@@ -111,9 +111,4 @@ ServerEvents.recipes((event) => {
   event.recipes.create.milling("minecraft:green_dye", "biomesoplenty:bush");
 
   event.remove({ id: "biomancy:crafting/primordial_core" });
-
-  event.recipes.create.haunting(
-    "biomancy:primordial_core",
-    "minecraft:rotten_flesh",
-  );
 });
