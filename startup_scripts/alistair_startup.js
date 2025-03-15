@@ -11,7 +11,7 @@ StartupEvents.registry("item", (event) => {
     });
 
   event
-    .create("rotten_dust", "create:sequenced_assembly")
+    .create("rotten_dust")
     .displayName("Rotten Dust")
-    .tooltip("☌⟊⎅⎎  ⟟⟒⟟⏚⌇⟒  ⟟⎅⟊⏃⍙⟒  ⟒⎅   ⎍⟒  ⊑");
+    .tooltip("☌⟊⎅⎎ ⟟⟒⟟⏚⌇⟒ ⟟⎅⟊⏃⍙⟒ ⟒⎅  ⎍⟒ ⊑");
 });
