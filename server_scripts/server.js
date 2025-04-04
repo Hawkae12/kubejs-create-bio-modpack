@@ -111,4 +111,20 @@ ServerEvents.recipes((event) => {
   event.recipes.create.milling("minecraft:green_dye", "biomesoplenty:bush");
 
   event.remove({ id: "biomancy:crafting/primordial_core" });
+
+  event.custom({
+    type: "create_mechanical_extruder:extruding",
+    ingredients: [
+      {
+        fluid: "minecraft:lava",
+        amount: 1000,
+      },
+      {
+        item: "ghasts_update:dried_ghast",
+      },
+    ],
+    result: {
+      item: "minecraft:ghast_tear",
+    },
+  });
 });
