@@ -128,7 +128,7 @@ ServerEvents.recipes((event) => {
     },
   });
 
-  // create lights
+  // create lights and netherite fix
 
   event.shaped(
     "morelights:small_edison_bulb",
@@ -144,6 +144,22 @@ ServerEvents.recipes((event) => {
       C: "#forge:wires",
     },
   );
+
+  event.recipes.create
+    .compacting(
+      Item.of("minecraft:netherite_ingot", 2), // Output
+      [
+        "minecraft:netherite_scrap",
+        "minecraft:netherite_scrap",
+        "minecraft:netherite_scrap",
+        "minecraft:netherite_scrap",
+        "minecraft:gold_ingot",
+        "minecraft:gold_ingot",
+        "minecraft:gold_ingot",
+        "minecraft:gold_ingot",
+      ],
+    )
+    .superheated();
 
   // \/ is ending statement
 });
