@@ -1,7 +1,7 @@
 // priority: 0
 
 ServerEvents.recipes((event) => {
-  event.recipes.create
+   event.recipes.create
     .sequenced_assembly(
       [Item.of("biomancy:primordial_core")],
       "kubejs:rotten_dust",
