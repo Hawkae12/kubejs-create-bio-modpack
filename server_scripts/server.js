@@ -127,4 +127,23 @@ ServerEvents.recipes((event) => {
       item: "minecraft:ghast_tear",
     },
   });
+
+  // create lights
+
+  event.shaped(
+    "morelights:small_edison_bulb",
+    [
+      // arg 1: output
+      " B ",
+      "BCB", // arg 2: the shape (array of strings)
+      " A ",
+    ],
+    {
+      A: "createaddition:connector",
+      B: "#forge:glass/colorless",
+      C: "#forge:wires",
+    },
+  );
+
+  // \/ is ending statement
 });
